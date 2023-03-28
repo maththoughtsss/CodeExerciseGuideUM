@@ -1,0 +1,15 @@
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\CodeExercisesGuide.csproj.AssemblyReference.cache
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\CodeExercisesGuide.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\CodeExercisesGuide.AssemblyInfoInputs.cache
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\CodeExercisesGuide.AssemblyInfo.cs
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\CodeExercisesGuide.csproj.CoreCompileInputs.cache
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\bin\Debug\net7.0\CodeExercisesGuide.exe
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\bin\Debug\net7.0\CodeExercisesGuide.deps.json
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\bin\Debug\net7.0\CodeExercisesGuide.runtimeconfig.json
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\bin\Debug\net7.0\CodeExercisesGuide.dll
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\bin\Debug\net7.0\CodeExercisesGuide.pdb
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\CodeExercisesGuide.dll
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\refint\CodeExercisesGuide.dll
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\CodeExercisesGuide.pdb
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\CodeExercisesGuide.genruntimeconfig.cache
+C:\Users\munoz\OneDrive\Escritorio\InformaticsEngineering\Codes_I\CodeExercisesGuide\obj\Debug\net7.0\ref\CodeExercisesGuide.dll
