@@ -12,7 +12,7 @@
             int numProject;
 
             Console.WriteLine("******* Bienvenido al Proyecto Guía de Ejercicios *******\n");
-            Console.WriteLine("Favor ingrese el proyecto a utilizar: \n 1.- Perímetro y Área de un Rectángulo \n 2.- Cálculador de IVA \n 3.- Mayor, Menor o Igual a 100 \n 4.- Impuestos");
+            Console.WriteLine("Favor ingrese el proyecto a utilizar: \n 1.- Perímetro y Área de un Rectángulo \n 2.- Calculadora de IVA \n 3.- Mayor, Menor o Igual a 100 \n 4.- Impuestos");
             strProject = Console.ReadLine();
 
             int.TryParse(strProject, out numProject);
@@ -38,7 +38,7 @@
             }
         }        
         static void RectangleCalculator()
-        //Función para calcular perímetro y área de un rectángulo 
+        //Función para calcular perímetro y área de un rectángulo.
         {   
             string? strLength, strWidth;
             double length, width, perimeter, area;
@@ -61,7 +61,7 @@
             Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
         }
         static void IVACalculator()
-        //Función para calcular el IVA
+        //Función para calcular el IVA del precio de un producto o servicio.
         {
             string? strPrice;
             double price, iva,priceIVA, priceWithoutIVA;
@@ -85,6 +85,7 @@
         }
 
         static void GreaterOrLessThanOneHundred()
+        //Función para comparar un número x con 100 y evaluar si es mayor, menor o igual.
         {
             string? strNum;
             int Num;
@@ -115,6 +116,7 @@
             }
         }
         static void Taxes()
+        //Función para calcular si se debe o no pagar impuestos.
         {
             string? strIncome;
             int income, minIncome;
