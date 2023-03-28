@@ -11,8 +11,8 @@
             string? strProject;
             int numProject;
 
-            Console.WriteLine("******* Bienvenido al Proyecto Guía de Ejercicios *******");
-            Console.WriteLine("Favor ingrese el proyecto a utilizar: \n 1.- Perímetro y Área de un Rectángulo \n 2.- Cálculador de IVA");
+            Console.WriteLine("******* Bienvenido al Proyecto Guía de Ejercicios *******\n");
+            Console.WriteLine("Favor ingrese el proyecto a utilizar: \n 1.- Perímetro y Área de un Rectángulo \n 2.- Cálculador de IVA \n 3.- Mayor, Menor o Igual a 100 \n 4.- Impuestos");
             strProject = Console.ReadLine();
 
             int.TryParse(strProject, out numProject);
@@ -25,11 +25,20 @@
             {
                 IVACalculator();
             }
+            if(numProject == 3)
+            {
+                GreaterOrLessThanOneHundred();
+            }
+            if(numProject == 4)
+            {
+                Taxes();
+            }
             else {
                 Console.WriteLine("Proyecto No Encontrado, Intente Nuevamente.");
             }
         }        
-        static void RectangleCalculator() 
+        static void RectangleCalculator()
+        //Función para calcular perímetro y área de un rectángulo 
         {   
             string? strLength, strWidth;
             double length, width, perimeter, area;
@@ -52,6 +61,7 @@
             Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
         }
         static void IVACalculator()
+        //Función para calcular el IVA
         {
             string? strPrice;
             double price, iva,priceIVA, priceWithoutIVA;
@@ -68,10 +78,67 @@
             priceWithoutIVA = price - priceIVA;
 
             Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
-            Console.WriteLine($"Total Precio IVA = {priceIVA}");
-            Console.WriteLine($"Total Precio Sin IVA = {priceWithoutIVA}");
-            Console.WriteLine($"Total Precio = {price}");
+            Console.WriteLine($"Total Precio IVA = $ {priceIVA}");
+            Console.WriteLine($"Total Precio Sin IVA = $ {priceWithoutIVA}");
+            Console.WriteLine($"Total Precio = $ {price}");
             Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
+        }
+
+        static void GreaterOrLessThanOneHundred()
+        {
+            string? strNum;
+            int Num;
+
+            Console.WriteLine("Mayor, Menor o igual a 100");
+            Console.WriteLine("Ingrese un nùmero entre el 0 y el 100: ");
+
+            strNum = Console.ReadLine();
+            int.TryParse(strNum, out Num);
+
+            if(Num < 100)
+            {   
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
+                Console.WriteLine($"El número {Num} es menor que 100");
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
+            }
+            if(Num > 100)
+            {
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
+                Console.WriteLine($"El número {Num} es mayor a 100");
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
+            }
+            if(Num == 100)   
+            {
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
+                Console.WriteLine($"El número {Num} es igual a 100");
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++");
+            }
+        }
+        static void Taxes()
+        {
+            string? strIncome;
+            int income, minIncome;
+
+            minIncome = 800000;
+
+            Console.WriteLine("¿Debe pagar Impuestos?");
+            Console.WriteLine("Ingrese su remuneración:");
+
+            strIncome = Console.ReadLine();
+            int.TryParse(strIncome, out income);
+
+            if(income > minIncome)
+            {
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++");
+                Console.WriteLine($"Debido al monto de su remuneración, a usted le corresponde pagar impuestos.");
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++");
+            }
+            else
+            {
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++");
+                Console.WriteLine($"Debido al monto de su remuneración, a usted NO le corresponde pagar impuestos.");
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++");
+            }
         }
     }
 }
