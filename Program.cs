@@ -7,6 +7,7 @@
             Welcome();
         }
         static void Welcome()
+        //Menu Bienvenida
         {
             string? strProject;
             int numProject;
@@ -33,8 +34,10 @@
             {
                 Taxes();
             }
-            else {
-                Console.WriteLine("Proyecto No Encontrado, Intente Nuevamente.");
+            else 
+            {
+                Console.Write("Presiona cualquier tecla para finalizar..."); //Bug
+                Console.ReadKey(); //Bug
             }
         }        
         static void RectangleCalculator()
@@ -91,7 +94,7 @@
             int Num;
 
             Console.WriteLine("Mayor, Menor o igual a 100");
-            Console.WriteLine("Ingrese un nùmero entre el 0 y el 100: ");
+            Console.WriteLine("Ingrese un número entre el 0 y el 100: ");
 
             strNum = Console.ReadLine();
             int.TryParse(strNum, out Num);
