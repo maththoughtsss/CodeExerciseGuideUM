@@ -14,7 +14,7 @@
 
             Console.WriteLine("******* Bienvenido al Proyecto Guía de Ejercicios *******\n");
             Console.WriteLine("Favor ingrese el proyecto a utilizar:\n");
-            Console.WriteLine(" 1.- Perímetro y Área de un Rectángulo \n 2.- Calculadora de IVA \n 3.- Mayor, Menor o Igual a 100 \n 4.- Impuestos \n 5.- Mayor que ... \n 6.- Aritmética \n 7.- Promedio \n");
+            Console.WriteLine(" 1.- Perímetro y Área de un Rectángulo \n 2.- Calculadora de IVA \n 3.- Mayor, Menor o Igual a 100 \n 4.- Impuestos \n 5.- Mayor que ... \n 6.- Aritmética \n 7.- Promedio \n 8.- Positivo - Neutro - Negativo \n 9.- Par/Impar \n 10.- Máximo");
             strProject = Console.ReadLine();
 
             int.TryParse(strProject, out numProject);
@@ -47,6 +47,18 @@
             {
                 Average();
             }
+            if(numProject == 8)
+            {
+                PositiveNeutralNegative();
+            }
+            if(numProject == 9)
+            {
+                EvenOrOdd();
+            }
+            //if(numProject == 10)
+            //{
+            //    Maximum();
+            //}
             else 
             {
                 Console.Write("Presiona cualquier tecla para finalizar..."); //Bug
@@ -293,6 +305,56 @@
 
             //Output
             Console.Write($"Estimado {name}, su promedio es: {totalAvg}, su estatus en la asignatura es de: {status}");
+        }
+        static void PositiveNeutralNegative()
+        //Función para identificar Positivos - Negativos - Neutro.
+        {
+            int num;
+
+            Console.WriteLine("Positivo - Neutro - Negativo \n");
+            Console.WriteLine("Ingrese un número entero:");
+
+            string? strNum1 = Console.ReadLine();
+            int.TryParse(strNum1, out num);
+
+            if(num > 0)
+            {
+                Console.WriteLine($"{num} es un número positivo");
+            }
+            else
+            {
+                if(num < 0)
+                {
+                    Console.WriteLine($"{num} es un número negativo");
+                }
+                else
+                {
+                    Console.WriteLine($"{num} es un número neutro");
+                }
+            }
+        }
+        static void EvenOrOdd()
+        //Función para identificar pares e impares.
+        {   
+            int number;
+            Console.WriteLine("Par o Impar \n");
+            Console.WriteLine("Ingrese un número entero:");
+
+            string? strNumber = Console.ReadLine();
+            int.TryParse(strNumber, out number);
+
+            if(number%2 == 1)
+            {
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++");
+                Console.WriteLine($"El {number} es un número Impar");
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++");
+            }
+            else
+            {
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++");
+                Console.WriteLine($"El {number} es un número Par");
+                Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++");
+            }
         }
     }
 }
