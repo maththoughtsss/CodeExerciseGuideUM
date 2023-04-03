@@ -14,7 +14,7 @@
 
             Console.WriteLine("******* Bienvenido al Proyecto Guía de Ejercicios *******\n");
             Console.WriteLine("Favor ingrese el proyecto a utilizar:\n");
-            Console.WriteLine(" 1.- Perímetro y Área de un Rectángulo \n 2.- Calculadora de IVA \n 3.- Mayor, Menor o Igual a 100 \n 4.- Impuestos \n 5.- Mayor que ... \n 6.- Aritmética \n 7.- Promedio \n 8.- Positivo - Neutro - Negativo \n 9.- Par/Impar \n 10.- Máximo");
+            Console.WriteLine(" 1.- Perímetro y Área de un Rectángulo \n 2.- Calculadora de IVA \n 3.- Mayor, Menor o Igual a 100 \n 4.- Impuestos \n 5.- Mayor que ... \n 6.- Aritmética \n 7.- Promedio \n 8.- Positivo - Neutro - Negativo \n 9.- Par/Impar \n 10.- Máximo \n");
             strProject = Console.ReadLine();
 
             int.TryParse(strProject, out numProject);
@@ -263,7 +263,7 @@
         //Función para calcular el promedio de 03 notas y entregar el estatus.
         {
             String? name, strNum1, strNum2, strNum3, status;
-            double num1, num2, num3, sumScore, totalAvg; 
+            float num1, num2, num3, sumScore, totalAvg; 
 
             //Inicio y Bienvenida del Programa
             Console.WriteLine("Bienvenido, cuál es tu nombre?: ");
@@ -278,9 +278,9 @@
             strNum3 = Console.ReadLine();
 
             //Conversión de Datos
-            double.TryParse(strNum1, out num1);
-            double.TryParse(strNum2, out num2);
-            double.TryParse(strNum3, out num3);
+            float.TryParse(strNum1, out num1);
+            float.TryParse(strNum2, out num2);
+            float.TryParse(strNum3, out num3);
 
             //Suma y Promedio
             sumScore = num1 + num2 + num3;
@@ -289,22 +289,24 @@
             //Sentencia
             if(totalAvg >= 6)
             {
-                status = "Excelente";
+                status = "Aprobado - Excelente ";
             }
             else
             {
                 if(totalAvg < 6 && totalAvg >= 4)
                 {
-                status = "Aprobado";
+                status = "Aprobado ";
                 }
                 else
                 {
-                    status = "Reprobado";
+                    status = "Reprobado ";
                 }                
             }
 
             //Output
-            Console.Write($"Estimado {name}, su promedio es: {totalAvg}, su estatus en la asignatura es de: {status}");
+            Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++");
+            Console.Write($"Estimado {name},\nSu promedio es de: {totalAvg}, \nEstatus Asignatura: {status}\n");
+            Console.WriteLine("++++++++++ ++++++++++ ++++++++++ ++++++++++");
         }
         static void PositiveNeutralNegative()
         //Función para identificar Positivos - Negativos - Neutro.
